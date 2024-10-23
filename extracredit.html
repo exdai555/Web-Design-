@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eddie Flying Membership</title>
+</head>
+
+</head>
+<body>
+<div class="header" id="myHeader">
+ <center>
+  <h2>Welcome to Eddie Flying Membership Page! 
+<img class="companylogo" src="../../IMG_0158_2.jpg"></h2>
+ </center>
+</div>
+
+
+<div class="content">
+  
+  <head>
+    <title>sign up </title>
+    <link rel="stylesheet" href="./homework3.css">
+<link rel="stylesheet" href="./extracredit.css">
+</head>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <div class="container">
+        <div class="countdown-container">
+            <p>To next website maintenance</p>
+            <div class="countdown" id="demo"></div>
+        </div>
+        <div id="div1" class="fa"></div>
+    </div>
+
+    
+</body>
+<script>
+       
+        var countDownDate = new Date("Jan 1, 2025 00:00:00").getTime();
+
+        var x = setInterval(function() {
+
+            var now = new Date().getTime();
+                
+            var distance = countDownDate - now;
+                
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+                
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+    <script>
+        function hourglass() {
+            var a;
+            a = document.getElementById("div1");
+            a.innerHTML = "&#xf251;";
+            setTimeout(function () {
+                a.innerHTML = "&#xf252;";
+            }, 1000);
+            setTimeout(function () {
+                a.innerHTML = "&#xf253;";
+            }, 2000);
+        }
+        hourglass();
+        setInterval(hourglass, 3000);
+    </script>
+</body>
+
+<body>
+    <center>
+
+
+<br>
+        
+         <script src="./extracredit.js"></script>
+        <p id="time"></p>
+        <script> dynamicdate();</script><br>
+       
+        <iframe src="./extracreditbody.html" width="800" height="600" title="Iframe Example"></iframe>
+    </center> 
+ <iframe src="../homework4/homework4footer.html" style="width:100%"></iframe>
+</center><br>
+</body>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+
+</script>
+
+   
+
+
+<body>
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="../../Thankyou.html" class="form-container">
+            <h1>Chat</h1>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</body>
+
+
+</body>
+</html>

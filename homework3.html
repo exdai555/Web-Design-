@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>sign up </title>
+    <link rel="stylesheet" href="./homework3.css">
+
+</head>
+
+<body>
+    <img class="background" src="./Screen_Shot_2024-02-06_at_10.36.06_PM.png" width="600" height="10">
+
+    <center>
+        <img class="companylogo" src="./Screen_Shot_2024-02-28_at_4.44.46_PM.png">
+    </center><br><br><br>
+
+    
+<center>
+
+    <div class="centered" >
+
+        <h1> <span style="color:blue;font-weight:bold;">Welcome to Eddie flying membership page ! <br> </span></h1>
+
+        <script src="./homework2.js"></script>
+
+        <body>
+        <p id="time"></p>
+        <script> dynamicdate();</script>
+        </body>
+
+
+
+            <p>Please enter your name, date of birth and gender exactly as they appear on your government-issued ID</p>
+
+            <!-------------------------------------------- input block------------------------------------------>
+
+            <label for="firstname">First name:</label>
+            <input type="text" size="25" id="firstname" name="firstname" placeholder="Enter your first name" value="" style="width: 200px; margin-left: 40px;" pattern="[A-Za-z]{1,30}" required>
+            <span id="firstNameValidationMessage" class="error-message"></span>
+            <br><br>
+            <label for=“middlename“>Middle name:</label>
+            <input type="text" size="25" id="middlename" name="middletname" placeholder="if shown on ID " value="" style="width: 200px;  margin-left: 24px;" pattern="[A-Za-z]{0,1}">
+            <span id="middleNameValidationMessage" class="error-message"></span>
+            <br><br>
+            <label for="lastname">Last name:</label>
+            <input type="text" size="25" id="lastname" name="lastname" placeholder="Enter your last name" style="width: 200px;  margin-left: 44px;" pattern="[A-Za-z]{1,30}" required>
+            <span id="lastNameValidationMessage" class="error-message"></span>
+            <br><br>
+            <label for="test">Address 1:</label>
+            <input type="text" size="25" id="test" name="test" placeholder="Enter your address" style="width: 200px; margin-left: 46px;" pattern="[a-zA-Z0-9 ]{1,30}" required>
+            <span id="addressValidationMessage" class="error-message"></span><br><br>
+
+            <label for="address2">Address 2:</label>
+            <input type="text" size="25" id="address2" name="address" placeholder="Enter your address (optional)" style="width: 200px; margin-left: 46px;" pattern="[a-zA-Z0-9 ]{2,30}">
+            <span id="addressValidationMessage2" class="error-message"></span><br><br>
+
+
+
+
+            <label for="City">City:</label>
+            <input type="text" size="25" id="City" name="address" placeholder="Enter your City" style="width: 200px; margin-left: 86px;" pattern="[a-zA-Z0-9 ]{1,30}" required>
+            <span id="cityValidationMessage" class="error-message"></span><br><br>
+
+            <label for="states">Choose a state:</label>
+            <select id="state" name="state" style="width: 200px; margin-left: 18px;" required>
+     
+      <option value=""></option>
+    <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+    <option value="DE">Delaware</option>
+    <option value="FL">Florida</option>
+    <option value="GA">Georgia</option>
+    <option value="HI">Hawaii</option>
+    <option value="ID">Idaho</option>
+    <option value="IL">Illinois</option>
+    <option value="IN">Indiana</option>
+    <option value="IA">Iowa</option>
+    <option value="KS">Kansas</option>
+    <option value="KY">Kentucky</option>
+    <option value="LA">Louisiana</option>
+    <option value="ME">Maine</option>
+    <option value="MD">Maryland</option>
+    <option value="MA">Massachusetts</option>
+    <option value="MI">Michigan</option>
+    <option value="MN">Minnesota</option>
+    <option value="MS">Mississippi</option>
+    <option value="MO">Missouri</option>
+    <option value="MT">Montana</option>
+    <option value="NE">Nebraska</option>
+    <option value="NV">Nevada</option>
+    <option value="NH">New Hampshire</option>
+    <option value="NJ">New Jersey</option>
+    <option value="NM">New Mexico</option>
+    <option value="NY">New York</option>
+    <option value="NC">North Carolina</option>
+    <option value="ND">North Dakota</option>
+    <option value="OH">Ohio</option>
+    <option value="OK">Oklahoma</option>
+    <option value="OR">Oregon</option>
+    <option value="PA">Pennsylvania</option>
+    <option value="RI">Rhode Island</option>
+    <option value="SC">South Carolina</option>
+    <option value="SD">South Dakota</option>
+    <option value="TN">Tennessee</option>
+    <option value="TX">Texas</option>
+    <option value="UT">Utah</option>
+    <option value="VT">Vermont</option>
+    <option value="VA">Virginia</option>
+    <option value="WA">Washington</option>
+    <option value="WV">West Virginia</option>
+    <option value="WI">Wisconsin</option>
+    <option value="WY">Wyoming</option>
+    <option value="AS">American Samoa</option>
+    <option value="MP">Northern Mariana Islands</option>
+    <option value="UM">United States Minor Outlying Islands</option>
+    <option value="VI">Virgin Islands, U.S.</option>
+            </select>
+            <span id="stateValidationMessage1" class="error-message"></span>
+            <br><br>
+
+            <label>Please select your gender:</label><br><br>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label>
+            <input type="radio" id="Undisclosed" name="gender" value="Undisclosed">
+            <label for="Undisclosed">Undisclosed</label><br><br>
+
+            <label>I took the covid vaccine with:</label><br><br>
+            <input type="checkbox" id="Vacinee" name="Vacinee" value="Pfizer">
+            <label for="Vacinee"> Pfizer</label>
+            <input type="checkbox" id="Vacinee" name="Vacinee" value="BioNTech">
+            <label for="Vacinee">BioNTech </label>
+            <input type="checkbox" id="Vacinee" name="Vacinee" value="AstraZeneca">
+            <label for="Vacinee">AstraZeneca </label>
+            <input type="checkbox" id="Vacinee" name="Vacinee" value="GSK">
+            <label for="Vacinee">GSK </label>
+            <input type="checkbox" id="Vacinee" name="Vacinee" value="Moderna">
+            <label for="Vacinee"> Moderna</label> <br><br> Please fill this out if you are interested in becoming a lifetime member. We will not disclose your information <br><br>
+            <label for="dob">Date of birth:</label>
+            <input type="text" size="35" style="width: 200px; margin-left: 40px;" pattern="(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/(19|20)\d{2}" id="dob" name="dob" placeholder="MM/DD/YYYY" required="">
+            <span id="dobValidationMessage" class="error-message" style="color: red;"></span> <br><br>
+
+            <label for="SSN">SSN:</label>
+            <input type="password" size="35" id="SSN" name="SSN" style="width: 200px; margin-left: 95px;" pattern="\d{3}-\d{2}-\d{4}" placeholder="***-**-****" required>
+            <span id="SSNValidationMessage" class="error-message" style="color: red;"></span> <br><br>
+
+            <label for="email">Email address:</label>
+            <input type="text" size="35" id="email" name="email" placeholder="example@example.com" style="width: 200px; margin-left: 35px;" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+            <span id="emailValidationMessage" class="error-message" style="color: red;"></span> <br><br>
+
+            <label for="phonenumber">Phone number:</label>
+            <input type="text" size="35" id="phonenumber" name="phonenumber" placeholder="***-***-****" style="width: 200px; margin-left: 35px;" pattern="^\d{3}-\d{3}-\d{4}$">
+            <span id="phonenumberValidationMessage" class="error-message" style="color: red;"></span> <br><br>
+
+            <label for="zipcode">Zip:</label>
+            <input type="text" size="25" id="zipcode" name="zipcode" placeholder="*****" style="width: 200px; margin-left: 107px;" pattern="^\d{5}$">
+            <span id="zipValidationMessage" class="error-message" style="color: red;"></span><br><br>
+
+            <label for="userid">UserID:</label>
+            <input type="text" size="25" id="userid" name="userid" style="width: 200px; margin-left: 84px;" pattern="[a-zA-Z0-9]{5,30}" placeholder="5 to 30 characters of letters" required>
+            <span id="userIDValidationMessage" class="error-message" style="color: red;"></span><br><br>
+
+            <label for="password1">Password:</label>
+            <input type="password" size="25" id="password1" name="password" placeholder="Type in your password" style="width: 200px; margin-left: 20px;" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}${1,}" required>
+            <span id="password1ValidationMessage" class="error-message" style="color: red;
+    width: 407px;
+    height: 20px;
+    "></span><br><br>
+
+            <label for="password2">Re-enter password:</label>
+            <input type="password" size="35" id="password2" name="password" placeholder="Must match with orginal password" style="width: 200px; margin-left: 10px;" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}${1,}" required>
+            <span id="password2ValidationMessage" class="error-message" style="color: red;"></span><br><br>
+
+            <label for="Todaysdate">Today's Date:</label>
+            <input type="date" id="Todaysdate" style="width: 117px; margin-left: 10px;" name="Todaysdate" required><br>
+            <span id="dateValidationMessage" class="error-message" style="color: red;"></span><br><br>
+
+
+            <h3>Site Feedback</h3>
+            <label>Overall satisfaction </label>
+
+
+
+            <input type="range" id="range" name="range" min="0" max="100" value="0">
+            <span id="outcome">0</span>
+            <script>
+                var slider = document.getElementById("range");
+                var output = document.getElementById("outcome");
+
+                output.innerHTML = slider.value;
+
+                slider.oninput = function() {
+                    output.innerHTML = this.value;
+                };
+            </script>
+
+
+            <p>Please share what information you were looking for so we can improve and help others</p>
+            <textarea name="message" rows="10" cols="50"></textarea>
+
+            <br><br>
+            <style>
+
+            </style>
+            <div>
+<form name="form" id="form" action="https://edtphw.w3spaces.com/Thankyou.html">
+                <button type="submit" id="sub">Submit</button></form><br>
+                <button onclick="validate()">validate</button>
+            </div>
+            <div style="    display: flex;
+    justify-content: center;
+    align-items: center;">
+                <button type="reset" onclick="alert('You have reset all')">Clear and start over</button><br><br>
+
+                <button onclick="showTab()" style="margin-left: 6px;">Show Table</button>
+            </div>
+            <!----------  footer with clickable element -------------->
+
+
+            <table id="formShow" style=" ">
+                <tr>
+                    <th>First Name:</th>
+                    <td><input id="FirstName" type="text" name="FirstName" readonly></td>
+                </tr>
+                <tr>
+                    <th>Middle Name:</th>
+                    <td><input id="MiddleName" type="text" name="FirstName" readonly></td>
+
+                </tr>
+                <tr>
+                    <th>Last Name:</th>
+                    <td><input id="LastName" type="text" name="LastName" readonly></td>
+                </tr>
+
+                <tr>
+                    <th>Date of birth:</th>
+                    <td><input id="DOB" type="text" name="DOB" readonly></td>
+                </tr>
+
+                <tr>
+                    <th>Address:</th>
+                    <td><input id="Address" type="text" name="Address" readonly></td>
+                </tr>
+
+                <tr>
+                    <th>State:</th>
+                    <td><input id="State" type="text" name="State" readonly></td>
+                </tr>
+
+                <tr>
+                    <th>Email:</th>
+                    <td><input id="Email" type="text" name="Email" readonly></td>
+                </tr>
+
+                <tr>
+                    <th>UserID:</th>
+                    <td><input id="UserID" type="text" name="UserID" readonly></td>
+                </tr>
+
+
+            </table>
+
+
+
+        </div>
+
+        </div>
+
+
+    </center>
+    <footer>
+        <center>
+            <p><a href="https://www.linkedin.com/in/edward-dai1/" style="color: red;">Visit My LinkedIn</a></p>
+        </center>
+    </footer>
+
+    <script src="./homework3.js"></script>
+    </html>

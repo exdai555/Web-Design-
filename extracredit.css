@@ -1,0 +1,132 @@
+
+
+body {
+            background-color: lightblue; 
+        }
+
+.header {
+  padding: 10px 16px;
+  background: #ffff00;
+  color:;
+}
+
+.content {
+  padding: 16px;
+}
+
+ .companylogo {
+            vertical-align: middle; /* Aligns the image vertically with the text */
+            width: 50px; /* Adjusted width for better fit */
+            height: auto; /* Keeps aspect ratio of the image */
+            margin-right: 10px; /* Optional: adds space between the image and text */
+        }
+
+.container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 10vh; 
+    }
+
+    .countdown-container {
+        display: flex;
+        align-items: center; 
+        margin-right: 50px; 
+    }
+
+    p {
+        text-align: center;
+        font-size: 18px;
+        margin: 0 40px; 
+    }
+
+    .countdown {
+        font-size: 18px; /
+        color: red; 
+    }
+
+    #div1 {
+        font-size: 48px;
+    }
+
+<style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 15px 25px;
+           
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: auto; 
+        }
+
+        
+        .chat-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+            width: 300px; /* Restored original width */
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            padding: 10px;
+            background-color: white;
+        }
+
+        /* Full-width textarea */
+        .form-container textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+            resize: none;
+            min-height: 200px;
+        }
+
+    
+        .form-container textarea:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+    
+        .form-container .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .form-container .cancel {
+            background-color: red;
+        }
+
+  
+        .form-container .btn:hover,
+        .open-button:hover {
+            opacity: 1;
+        }
+    </style>
+
+
